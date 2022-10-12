@@ -1,14 +1,10 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
-
 const YourApp = () => {
-  return (
-    <View style={styles.container}>
+  return <View style={styles.container}>
       <Text style={styles.text}>Welcome to your brand new app!</Text>
-    </View>
-  )
+    </View>;
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -17,9 +13,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20
-  },
-})
-
+  }
+});
 export const YourAppModule = {
   name: "YourApp",
   path: "./",
@@ -28,4 +23,4 @@ export const YourAppModule = {
     title: "Your App",
     navigator: YourApp
   }
-}
+};
